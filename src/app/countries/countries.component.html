@@ -1,0 +1,26 @@
+<div class="content">
+
+  <div class="filter">
+    <input
+      type="text"
+      id="filter-text-box"
+      placeholder="Filter..."
+      (input)="onFilterTextBoxChanged()"
+    />
+  </div>
+
+  <diV class="table">
+    <ag-grid-angular
+      style="height: 600px"
+      [rowData]="countriesStore.items()"
+      [defaultColDef]="GRID.defaultColDef"
+      [columnDefs]="GRID.columnDefs"
+      [pagination]="true"
+      class="ag-theme-material"
+      (gridReady)="onGridReady($event)"
+    />
+  </diV>
+
+</div>
+
+

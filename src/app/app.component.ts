@@ -1,13 +1,11 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component} from '@angular/core';
+import { CountriesComponent } from './countries/countries.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [CountriesComponent],
+  template: `<app-countries></app-countries>`,
 })
 export class AppComponent {
-  title = 'angular-ngrx-signal-store';
 }

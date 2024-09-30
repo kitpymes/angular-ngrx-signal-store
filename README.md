@@ -12,6 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
@@ -25,3 +26,35 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Documentation
+
+Execute the doc via [Compodoc](https://compodoc.app/)
+```
+Installation
+ $ npm install -g @compodoc/compodoc
+
+ # Create a file named tsconfig.doc.json, containing:
+    {
+      "include": ["src/**/*.ts"],
+      "exclude": ["src/test.ts", "src/**/*.spec.ts"]
+    }
+
+ # Run compodoc in your project (generated with Angular CLI for example) and serve it
+
+ Build
+ $ npm run doc:build
+
+ Run
+ $ npm run doc:serve
+
+ Build and Run
+ $ npm run doc:build-serve
+```
+
+## Store
+# Refrences
+Execute the doc via [ngrx](https://ngrx.io/guide/signals/signal-store)
+Execute the doc via [ngrx-signal-store](https://offering.solutions/blog/articles/2023/12/03/ngrx-signal-store-getting-started/)
+
+
